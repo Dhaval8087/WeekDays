@@ -1,3 +1,13 @@
-.wk-portlet__body {
-	padding: 10 10 !important;
+
+.container {
+  padding: 10px;
+}
+.form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.form-element {
+  padding: 5px 0px 25px 2px;
+  width: 100%;
 }

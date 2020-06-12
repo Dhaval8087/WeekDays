@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { EditWeekDaysComponent } from './week-days/edit-week-days/edit-week-days.component';
 import { WeekDaysComponent } from './week-days/week-days.component';
 
 
 const routes: Routes = [
-  { path: 'weekdays', component: WeekDaysComponent }
-  // {path:'weekdays/edit/:id',component:}
+  { path: 'weekdays', component: WeekDaysComponent },
+  { path: 'weekdays/edit/:id', component: EditWeekDaysComponent }
 ];
 
 @NgModule({
