@@ -1,0 +1,27 @@
+<div class="wk-portlet__body">
+  <div class="form-group kt-form__group row">
+    <div class="col-lg-4 kt-margin-bottom-20-mobile">
+      Day : {{data.day}}
+    </div>
+  </div>
+  <div class="form-group kt-form__group row">
+    <div class="col-lg-4 kt-margin-bottom-20-mobile">
+      Is Query : {{data.isQueryString}}
+    </div>
+  </div>
+  <div class="form-group kt-form__group row">
+    <div class="col-lg-4 kt-margin-bottom-20-mobile">
+      Current Time : {{data.currentTime}}
+    </div>
+  </div>
+  <div class="form-group kt-form__group row">
+    <ng-container ktPortletTools>
+      <a href="javascript:;" class="btn btn-secondary kt-margin-r-10" mat-raised-button matTooltip="Cancel"
+        (click)="this.dialog.closeAll()">
+        <i class="la la-cog"></i>
+        <span class="kt-hidden-mobile">Ok</span>
+      </a>
+    </ng-container>
+  </div>
+
+</div>

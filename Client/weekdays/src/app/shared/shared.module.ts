@@ -1,7 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatIconModule, MatTableModule, MatToolbarModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatDialogModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatTableModule,
+  MatToolbarModule,
+} from '@angular/material';
 
 @NgModule({
   declarations: [],
@@ -11,12 +18,18 @@ import { MatIconModule, MatTableModule, MatToolbarModule } from '@angular/materi
     ReactiveFormsModule,
     MatTableModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule
   ],
   exports: [
     MatTableModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule
   ]
 })
 export class SharedModule { }
