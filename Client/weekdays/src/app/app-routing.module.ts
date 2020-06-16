@@ -7,7 +7,7 @@ import { WeekDaysComponent } from './week-days/week-days.component';
 
 const routes: Routes = [
   { path: 'weekdays', component: WeekDaysComponent },
-  { path: 'weekdays/edit/:id', component: EditWeekDaysComponent }
+  { path: 'weekdays/edit', component: EditWeekDaysComponent }
 ];
 
 @NgModule({

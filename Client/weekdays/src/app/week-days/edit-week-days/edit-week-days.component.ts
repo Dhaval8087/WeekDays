@@ -34,6 +34,7 @@ export class EditWeekDaysComponent implements OnInit {
   onSave() {
     // all save logic goes here.
   }
+
   onCancel() {
     this.router.navigateByUrl('weekdays');
   }

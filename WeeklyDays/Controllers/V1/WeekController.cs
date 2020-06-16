@@ -35,7 +35,7 @@ namespace WeeklyDays.Controllers.V1
         [Route("add-weekday")]
         [ProducesResponseType(typeof(IReadOnlyCollection<WeekDaysDto>), (int)HttpStatusCode.OK)]
 
-        public ActionResult<IReadOnlyCollection<WeekDaysDto>> Add()
+        public ActionResult<IReadOnlyCollection<WeekDaysDto>> Add([FromBody] List<WeekDaysDto> weekDays)
         {
             var users = _weekDaysService.AddWeekDay();
             return Ok(users);

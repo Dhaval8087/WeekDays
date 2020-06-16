@@ -23,7 +23,7 @@ export class WeekDaysComponent implements OnInit {
 
   }
   onEdit(id) {
-    this.router.navigateByUrl(`weekdays/edit/${id}`)
+    this.router.navigateByUrl(`weekdays/edit`)
   }
   onDisplay(id) {
     const dialogRef = this.dialog.open(ViewInfomrationComponent, {
